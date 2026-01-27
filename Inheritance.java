@@ -1,13 +1,11 @@
+import tools.Calc;
 public class Inheritance {
     public static void main(String[] args) {
-        VeryAdvCalc obj = new VeryAdvCalc();
+        Calc obj = new Calc();
+        int r1 = obj.add(10,2);
+        int r2 = obj.sub(1, 2);
+        
+        System.out.println(r1 + " " + " " + r2);
+ }
 
-        int r1 = obj.add(2, 3);
-        int r2 = obj.sub(12, 3);
-        int r3 = obj.multi(2, 3);
-        int r4 = obj.div(15, 3);
-        double r5 = obj.power(5, 4);
-
-        System.out.println(r1 + " " + r2 + " " +   " " + r3 + " " + r4 + " " + r5) ;
-    }
 }
